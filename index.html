@@ -65,7 +65,7 @@
             </div>
         </nav>
 
-        <section style = "background: unset;">
+        <section style="background: unset;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 d-flex align-items-center justify-content-center">
@@ -73,7 +73,8 @@
                             <h1 class="heading text-capitalize">MARS IS THERE
                                 WAITING TO
                                 BE REACHED</h1>
-                            <p class="my-4 text-white" style="font-size: 20px; width: 70%">Lorem ipsum dolor sit amet consectetur
+                            <p class="my-4 text-white" style="font-size: 20px; width: 70%">Lorem ipsum dolor sit amet
+                                consectetur
                                 adipisicing elit. Odio aperiam ratione pariatur quidem fuga</p>
                             <div>
                                 <div class="d-flex" style="width: 100%">
@@ -100,12 +101,12 @@
     </header>
 
     <section>
-        <div class = "container">
-            <h1 class = "text-center text-white">WHY ORB?</h1>
-            <div class = "row">
-                <div class = "col-lg-6">
-                    <p class = "text-white">I N S T A N T U S A G E R E W A R D</p>
-                    <p class = "text-white">AT MEME MAKER DAO WE AIM TO CREATE AN ECOSYSTEM
+        <div class="container">
+            <h1 class="text-center text-white">WHY ORB?</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="text-white">I N S T A N T U S A G E R E W A R D</p>
+                    <p class="text-white">AT MEME MAKER DAO WE AIM TO CREATE AN ECOSYSTEM
                         WHERE MEME MAKERS ARE INCENTIVIZED TO DISPLAY
                         THEIR WORK ON OUR MARKETPLACE AND GET RATED FOR
                         THE QUALITY OF THEIR WORK. THE WORK THEY DISPLAY
@@ -113,7 +114,7 @@
                         APPROACH THEM TO GET MEMES MADE FOR THEIR
                         PROJECT. THINK OF IT AS AN UPWORK/FIVER ON
                         BLOCKCHAIN.</p>
-                    <p class = "text-white">OUR AIM IS TO START WITH MEME MAKERS AND THEN
+                    <p class="text-white">OUR AIM IS TO START WITH MEME MAKERS AND THEN
                         GROW IT AS A FULL FLEDGE MARKETPLACE FOR ANYTHING
                         RELATED TO BLOCKCHAIN, WHICH INCLUDES SMART
                         CONTRACT DEVELOPMENT, NFTS, HIRING ADMINS/MODS,
@@ -131,27 +132,27 @@
     </section>
 
     <section>
-        <h1 class = "text-center text-white">Token Mechanics</h1>
-        <div class = "container">
-            <div class = "row">
-                <div class = "col-lg-6">
+        <h1 class="text-center text-white">Token Mechanics</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
 
                 </div>
-                <div class = "col-lg-6 px-1 d-flex justify-content-center">
-                    <div style = "border: 2px solid #eee;width: 80%" class = "p-3">
-                        <div style = "border: 2px solid #eee;" class = "p-3 my-2">
+                <div class="col-lg-6 px-1 d-flex justify-content-center">
+                    <div style="border: 2px solid #eee;width: 80%" class="p-3">
+                        <div style="border: 2px solid #eee;" class="p-3 my-2">
                             <h1>1,000,000,000</h1>
                             <p>Total Supply</p>
                         </div>
-                        <div style = "border: 2px solid #eee;" class = "p-3 my-2">
+                        <div style="border: 2px solid #eee;" class="p-3 my-2">
                             <h1>1,000,000,000</h1>
                             <p>Total Supply</p>
                         </div>
-                        <div style = "border: 2px solid #eee;" class = "p-3 my-2">
+                        <div style="border: 2px solid #eee;" class="p-3 my-2">
                             <h1>1,000,000,000</h1>
                             <p>Total Supply</p>
                         </div>
-                        <div style = "border: 2px solid #eee;" class = "p-3 my-2">
+                        <div style="border: 2px solid #eee;" class="p-3 my-2">
                             <h1>1,000,000,000</h1>
                             <p>Total Supply</p>
                         </div>
@@ -162,13 +163,23 @@
     </section>
 
     <section>
-        <div class = "container">
-            <div class = "row">
-                <div class = "col-lg-6">
-                    <h1 class = "text-white">Where to get ORB?</h1>
-                    <p class = "text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aliquam blanditiis tempore deleniti explicabo doloremque aperiam harum hic esse cupiditate sit perferendis excepturi facere animi repellat at, earum deserunt ut.</p>
-                </div>
-            </div>
+        <div class="container">
+              <div class="sticky-container">
+                <main>
+                  <section>
+                    <h1>Beep</h1>
+                  </section>
+                  <section>
+                    <h1>Boop</h1>
+                  </section>
+                  <section>
+                    <h1>Boooom</h1>
+                  </section>
+                  <section>
+                    <h1>The End</h1>
+                  </section>
+                </main>
+              </div>
         </div>
     </section>
 
@@ -181,6 +192,57 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script>
+        /**
+* By Alvaro Trigo 
+* Follow me on Twitter: https://twitter.com/imac2
+*/
+        (function () {
+            init();
+
+            var g_containerInViewport;
+            function init() {
+                setStickyContainersSize();
+                bindEvents();
+            }
+
+            function bindEvents() {
+                window.addEventListener("wheel", wheelHandler);
+            }
+
+            function setStickyContainersSize() {
+                document.querySelectorAll('.sticky-container').forEach(function (container) {
+                    const stikyContainerHeight = container.querySelector('main').scrollWidth;
+                    container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
+                });
+            }
+
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
+            }
+
+            function wheelHandler(evt) {
+
+                const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function (container) {
+                    return isElementInViewport(container);
+                })[0];
+
+                if (!containerInViewPort) {
+                    return;
+                }
+
+                var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
+                var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
+                let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
+
+                if (g_canScrollHorizontally) {
+                    containerInViewPort.querySelector('main').scrollLeft += evt.deltaY;
+                }
+            }
+        })();
+    </script>
 </body>
 
 </html>
