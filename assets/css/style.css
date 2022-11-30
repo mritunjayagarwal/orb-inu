@@ -377,4 +377,18 @@ iframe[sandbox] .read-article {
     }
     }
     
+    .howbtn{
+        border: none;
+        outline: none;
+        background: none;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .circle{
+        font-size: 30px;
+        font-weight: 900;
+        color: #09202A
+    }
      

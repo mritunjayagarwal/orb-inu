@@ -261,23 +261,23 @@
             <div class = "d-flex justify-content-center">
                 <div class = "d-flex">
                     <div class = "px-4">
-                        <button id = "step1" onclick = "change(1, 'Lorem ipsum dolor sit amet')">Step 1</button>
+                        <button class = "howbtn" id = "step1" onclick = "change(1, 'Lorem ipsum dolor sit amet')">Step 1</button>
                     </div>
                     <div class = "px-4">
-                        <button id = "step2" onclick = "change(2, 'Lorem ipsum dolor sit amet consectetur')">Step 2</button>
+                        <button class = "howbtn" id = "step2" onclick = "change(2, 'Lorem ipsum dolor sit amet consectetur')">Step 2</button>
                     </div>
                     <div class = "px-4">
-                        <button id = "step3" onclick = "change(3, 'Lorem ipsum dolor sit amet consectetur adipisicing')">Step 3</button>
+                        <button class = "howbtn" id = "step3" onclick = "change(3, 'Lorem ipsum dolor sit amet consectetur adipisicing')">Step 3</button>
                     </div>
                     <div class = "px-4">
-                        <button id = "step4"  onclick = "change(4, 'Lorem ipsum dolor sit amet consectetur adipisicing elit.')">Step 4</button>
+                        <button class = "howbtn" id = "step4"  onclick = "change(4, 'Lorem ipsum dolor sit amet consectetur adipisicing elit.')">Step 4</button>
                     </div>
                 </div>
             </div>
 
             <div class = "px-2 py-3 mt-5"  style = "background: #9C1D32; border: 5px solid #eee;width: 80%; margin: 0 auto;">
                 <div class = "row" id = "mainn">
-                    <div class = "col-lg-1 d-flex align-items-center justify-content-center">
+                    <div class = "col-lg-1 d-flex align-items-center justify-content-center circle">
                         1
                     </div>
                     <div class = "col-lg-11 text-white" style = "font-size: 23px">
@@ -296,7 +296,7 @@
                 </div>
                 <div class = "col-lg-6">
                     <h1 style = "color: #fff;">JOIN US</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolore quo! Voluptate tenetur exercitationem mollitia soluta, neque quasi! Inventore quidem quaerat repellendus eum impedit porro sit commodi nihil iure qui.</p>
+                    <p class = "text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolore quo! Voluptate tenetur exercitationem mollitia soluta, neque quasi! Inventore quidem quaerat repellendus eum impedit porro sit commodi nihil iure qui.</p>
                 </div>
             </div>
         </div>
@@ -363,7 +363,7 @@
         })();
 
         function change(i, text){
-            document.getElementById('mainn').innerHTML = `<div class = "col-lg-1 d-flex align-items-center justify-content-center">${i}</div><div class = "col-lg-11 text-white" style = "font-size: 23px">${text}</div>`;
+            document.getElementById('mainn').innerHTML = `<div class = "col-lg-1 circle d-flex align-items-center justify-content-center">${i}</div><div class = "col-lg-11 text-white" style = "font-size: 23px">${text}</div>`;
         }
     </script>
 </body>
