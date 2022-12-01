@@ -6,7 +6,7 @@
 body {
     max-width: 100% !important;
     overflow-x: hidden;
-    font-family: Figerona
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 p {
@@ -80,7 +80,7 @@ section {
 .heading {
     margin-bottom: 10px;
     margin-top: 0;
-    font-size: 70px;
+    font-size: 60px;
     color: #eee;
     font-weight: 900;
     letter-spacing: 7px;
