@@ -352,27 +352,27 @@
             
             <div class = "d-flex justify-content-center">
                 <div class = "d-flex">
-                    <div class = "px-4">
+                    <div class = "how-btn">
                         <button class = "howbtn" id = "step1" onclick = "change(1, 'Lorem ipsum dolor sit amet')">Step 1</button>
                     </div>
-                    <div class = "px-4">
+                    <div class = "how-btn">
                         <button class = "howbtn" id = "step2" onclick = "change(2, 'Lorem ipsum dolor sit amet consectetur')">Step 2</button>
                     </div>
-                    <div class = "px-4">
+                    <div class = "how-btn">
                         <button class = "howbtn" id = "step3" onclick = "change(3, 'Lorem ipsum dolor sit amet consectetur adipisicing')">Step 3</button>
                     </div>
-                    <div class = "px-4">
+                    <div class = "how-btn">
                         <button class = "howbtn" id = "step4"  onclick = "change(4, 'Lorem ipsum dolor sit amet consectetur adipisicing elit.')">Step 4</button>
                     </div>
                 </div>
             </div>
 
-            <div class = "px-2 py-3 mt-5"  style = "background: #9C1D32; border: 5px solid #eee;width: 80%; margin: 0 auto;">
+            <div class = "px-2 py-3 mt-5 how-tobuy">
                 <div class = "row" id = "mainn">
-                    <div class = "col-lg-1 d-flex align-items-center justify-content-center circle">
-                        1
+                    <div class = "col-lg-2 d-flex align-items-center justify-content-center circle">
+                        <div class="numberCircle">1</div>
                     </div>
-                    <div class = "col-lg-11 text-white" style = "font-size: 23px">
+                    <div class = "col-lg-10 text-white px-2" style = "font-size: 23px">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ad velit tenetur ex deleniti cumque laborum fugit ullam nostrum, soluta fugiat nisi, sit illo delectus veritatis iusto nesciunt illum iste.
                     </div>
                 </div>
@@ -393,7 +393,7 @@
                 </div>
                 <div class = "col-lg-3 d-flex   justify-content-center">
                     <div>
-                        <h1 style = "color: #fff;font-size: 40px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight:500; margin-top: 200px"><img src = "./assets/img/icon/5.png" style = "width: 80px;">ORB INU</h1>
+                        <h1 class = "socials"><img src = "./assets/img/icon/5.png" style = "width: 80px;">ORB INU</h1>
                     <div class = "d-flex mt-3">
                         <i class = "fa fa-telegram mr-2" style = "border-radius: 60px; background: #fff; padding : 10px 15px; font-size: 25px"></i>
                         <i class = "fa fa-twitter mr-2" style = "border-radius: 60px; background: #fff; padding : 10px 15px; font-size: 25px"></i>
@@ -409,7 +409,7 @@
                     </div>
                 </div>
                 <div class = "col-lg-4 d-flex justify-content-center">
-                    <div style = "margin-top: 215px;">
+                    <div class = "information">
                         <h2 class = "text-white text-center">Information</h2>
                     <div class = "d-flex" style = "margin-top: 35px">
                         <ul style = "list-style-type: none;flex: 1; margin-right: 50px">
@@ -492,7 +492,7 @@
         })();
 
         function change(i, text){
-            document.getElementById('mainn').innerHTML = `<div class = "col-lg-1 circle d-flex align-items-center justify-content-center">${i}</div><div class = "col-lg-11 text-white" style = "font-size: 23px">${text}</div>`;
+            document.getElementById('mainn').innerHTML = `<div class = "col-lg-2 circle d-flex align-items-center justify-content-center"><div class="numberCircle">${i}</div></div><div class = "col-lg-10 text-white px-2" style = "font-size: 23px">${text}</div>`;
         }
 
         particlesJS("particles-js", {
