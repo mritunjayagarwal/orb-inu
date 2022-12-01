@@ -231,6 +231,7 @@ main {
     /* align-items: center; */
     font-size: 4ch;
     color: #fff;
+    padding: 50px 0;
     background: transparent
 }
 
@@ -396,12 +397,20 @@ iframe[sandbox] .read-article {
         color: #09202A
     }
 
-    .custom-shape-divider-top-1669870002 {
+    .custom-shape-divider-top-1669877962 {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         overflow: hidden;
         line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-top-1669877962 svg {
+        position: relative;
+        display: block;
+        width: calc(136% + 1.3px);
+        height: 234px;
     }
      
