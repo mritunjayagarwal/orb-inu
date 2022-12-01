@@ -187,7 +187,7 @@
             <h1 class = "h-back text-center" style ="z-index: 8;">$ORB</h1>
             <p class = "text-white text-center" style = "width: 60%; margin: 0 auto;margin-top: 50px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ea quibusdam possimus ducimus magni quam blanditiis nemo? Libero voluptate id nostrum suscipit blanditiis laborum, quo repellendus corporis a, reiciendis temporibus?</p>
             <div class="sticky-container">
-                <main class = "main-main">
+                <div class = "mainn">
                     <div class="horizontal" style ="min-width: 50vw;">
                         <img src="./assets/img/icon/4.png" class="img-fluid" alt="">
                     </div>
@@ -260,7 +260,7 @@
                             </ul>
                         </div>
                     </div>
-                </main>
+                </div>
             </div>
             <main style = "display: unset" class = "main-temp">
                <div class = "container">
@@ -441,56 +441,74 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script>
+
+gsap.registerPlugin(ScrollTrigger);
+
+let sections = gsap.utils.toArray(".horizontal");
+
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".mainn",
+    pin: true,
+    scrub: 1,
+    snap: 1 / (sections.length - 1),
+    // base vertical scrolling on how wide the container is so it feels more natural.
+    end: () => "+=" + document.querySelector(".mainn").offsetWidth
+  }
+});
         /**
 * By Alvaro Trigo 
 * Follow me on Twitter: https://twitter.com/imac2
 */
-        (function () {
-            init();
+        // (function () {
+        //     init();
 
-            var g_containerInViewport;
-            function init() {
-                setStickyContainersSize();
-                bindEvents();
-            }
+        //     var g_containerInViewport;
+        //     function init() {
+        //         setStickyContainersSize();
+        //         bindEvents();
+        //     }
 
-            function bindEvents() {
-                window.addEventListener("wheel", wheelHandler);
-            }
+        //     function bindEvents() {
+        //         window.addEventListener("wheel", wheelHandler);
+        //     }
 
-            function setStickyContainersSize() {
-                document.querySelectorAll('.sticky-container').forEach(function (container) {
-                    const stikyContainerHeight = container.querySelector('main').scrollWidth;
-                    container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
-                });
-            }
+        //     function setStickyContainersSize() {
+        //         document.querySelectorAll('.sticky-container').forEach(function (container) {
+        //             const stikyContainerHeight = container.querySelector('main').scrollWidth;
+        //             container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
+        //         });
+        //     }
 
-            function isElementInViewport(el) {
-                const rect = el.getBoundingClientRect();
-                return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
-            }
+        //     function isElementInViewport(el) {
+        //         const rect = el.getBoundingClientRect();
+        //         return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
+        //     }
 
-            function wheelHandler(evt) {
+        //     function wheelHandler(evt) {
 
-                const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function (container) {
-                    return isElementInViewport(container);
-                })[0];
+        //         const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function (container) {
+        //             return isElementInViewport(container);
+        //         })[0];
 
-                if (!containerInViewPort) {
-                    return;
-                }
+        //         if (!containerInViewPort) {
+        //             return;
+        //         }
 
-                var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
-                var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
-                let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
+        //         var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
+        //         var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
+        //         let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
 
-                if (g_canScrollHorizontally) {
-                    containerInViewPort.querySelector('main').scrollLeft += evt.deltaY;
-                }
-            }
-        })();
+        //         if (g_canScrollHorizontally) {
+        //             containerInViewPort.querySelector('main').scrollLeft += evt.deltaY;
+        //         }
+        //     }
+        // })();
 
         function change(i, text){
             document.getElementById('mainn').innerHTML = `<div class = "col-lg-2 circle d-flex align-items-center justify-content-center"><div class="numberCircle">${i}</div></div><div class = "col-lg-10 text-white px-2" style = "font-size: 23px">${text}</div>`;

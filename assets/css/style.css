@@ -169,11 +169,10 @@ section {
     margin-top: 215px;
 }
 
-main {
-    overflow-x: hidden;
+.mainn {
+    width: 600% !important;
     display: flex;
-    position: sticky;
-    top: 0;
+    flex-wrap: nowrap;
 }
 
 .horizontal {
