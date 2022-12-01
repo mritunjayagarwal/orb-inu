@@ -119,9 +119,9 @@ section {
         width: 100%;
     }
 
-    .main-main{
+    /* .main-main{
         display: none;
-    }
+    } */
 
     .main-temp{
         display: block !important;
@@ -173,6 +173,7 @@ section {
     width: 600% !important;
     display: flex;
     flex-wrap: nowrap;
+    position:sticky;
 }
 
 .horizontal {
