@@ -82,7 +82,7 @@ section {
     margin-top: 0;
     font-size: 60px;
     color: #eee;
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: 7px;
 }
 
@@ -390,5 +390,14 @@ iframe[sandbox] .read-article {
         font-size: 30px;
         font-weight: 900;
         color: #09202A
+    }
+
+    .custom-shape-divider-top-1669870002 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
     }
      
