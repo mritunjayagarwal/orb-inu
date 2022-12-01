@@ -170,7 +170,7 @@ section {
 }
 
 .mainn {
-    width: 600% !important;
+    width: 1000% !important;
     display: flex;
     /* flex-wrap: nowrap; */
     position:sticky;
