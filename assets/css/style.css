@@ -1,11 +1,6 @@
-@font-face {
-    font-family: Figerona;
-    src: url(../Figerona-VF.ttf);
-}
-
 body {
-    max-width: 100% !important;
-    overflow-x: hidden;
+    /* max-width: 100% !important; 
+    overflow-x: hidden; */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
@@ -28,6 +23,7 @@ p {
 
 section {
     padding: 100px 0 150px 0;
+    max-width: 100%;
     /* height: 100vh; */
     /* background: #610105; */
 }
@@ -86,131 +82,34 @@ section {
     letter-spacing: 7px;
 }
 
-.roadmap-section {
-    position: relative;
-    padding: 100px 0 650px 0;
-    margin-top: -50px;
-    background: url(../img/bg1.png);
-    background-size: cover;
+.doggo-temp{
+    display: none;
 }
 
-.road-img {
-    position: absolute;
-    top: 0px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-footer {
-    margin-top: 150px !important;
-}
-
-.roadmap-head {
-    position: absolute;
-    top: 100px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.iframe-uni {
-    width: 450px;
-    height: 610px;
-    z-index: 2;
-    border-radius: 40px;
-    overflow: hidden;
-    border: 10px solid #216C7A
-}
-
-@media only screen and (max-width: 2100px) {
-
-    .roadmap-section {
-        padding: 100px 0 500px 0 !important;
-    }
-
-    footer {
-        margin-top: 520px !important;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-
-    .roadmap-section {
-        padding: 100px 0 500px 0 !important;
-    }
-
-    footer {
-        margin-top: 150px !important;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-
-    .roadmap-section {
-        padding: 100px 0 500px 0 !important;
-    }
-
-    footer {
-        margin-top: 70px !important;
-    }
+.doc-temp{
+    display: none;
 }
 
 @media only screen and (max-width: 667px) {
-    .heading {
-        font-size: 50px;
-    }
-
-    .h-back {
+    
+    .doggo-main{
         display: none;
     }
 
-    .roadmap-head {
-        top: 20px !important
+    .doggo-temp{
+        display: block;
     }
 
-    .road-img {
-        top: 0px !important;
+    .doc-main{
+        display: none;
     }
 
-    footer {
-        margin-top: 0px !important;
+    .doc-temp{
+        display: block;
     }
 
-    .nav-item {
-        margin: 10px 0 10px -10px;
-    }
-
-    .uni-btn {
-        width: 98%;
-        margin-left: 10px;
-    }
-
-    .iframe-uni {
-        width: 110% !important;
-        border: 5px solid #216C7A;
-    }
-
-    h1 {
-        margin: -80px 0 50px 0;
-    }
-
-    .container {
-        max-width: 98%;
-        margin: 0 auto;
-    }
-
-    .avenue {
-        height: 100%;
-    }
-
-    .avenue .btn {
-        position: unset;
-        width: 100%;
-    }
-
-    .sup-img {
-        width: 800px !important;
+    .h-back{
+        font-size: 40px;
     }
 
 }
@@ -247,29 +146,6 @@ main {
     color: #f7940a;
     /* opacity: 0.4; */
     transform: rotate(270deg);
-}
-
-.read-article {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 999;
-    color: #000;
-    background: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-family: arial;
-    text-decoration: none;
-    box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
-}
-
-.read-article:hover {
-    background: #d5d5d5;
-    box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
-}
-
-iframe[sandbox] .read-article {
-    display: none;
 }
 
 .launch-ul {
@@ -413,4 +289,10 @@ iframe[sandbox] .read-article {
         width: calc(136% + 1.3px);
         height: 234px;
     }
+
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
      
