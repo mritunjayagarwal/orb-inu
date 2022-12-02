@@ -170,8 +170,8 @@ section {
     .rocket-guy{
         max-width: 50vw !important;
         padding: 0 !important;
-        display: flex;
-        align-items: center;
+        /* display: flex;
+        align-items: center; */
     }
 
     .rocket-guy img{
