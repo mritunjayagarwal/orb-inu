@@ -113,19 +113,39 @@ section {
     font-size: 20px; width: 70%
 }
 
+.rocket-guy{
+    min-width: 30vw;
+}
+
+.rocket-guy img{
+    width: 100%;
+    height: auto !important;
+}
+
 @media only screen and (max-width: 667px) {
+
+    .rocket-guy{
+        max-width: 30vmax !important;
+        padding: 0 !important
+    }
+
+    .rocket-guy img{
+        width: 100%;
+        height: auto !important;
+    }
 
     .head-para{
         font-size: 16px;
         width: 100%
     }
 
-    .social-div{
+    /* .social-div{
         padding-left: 20px
-    }
+    } */
 
     .heading{
         font-size: 30px;
+        margin-top: 100px;
     }
 
     .how-btn{
@@ -194,11 +214,11 @@ section {
 }
 
 .horizontal {
-    min-width: 30vw;
-    min-height: 100vh;
+    min-width: 20vw;
+    /* min-height: 100vh; */
     display: flex;
     /* justify-content: center; */
-    margin: -30px 0 0 30px;
+    margin: 100px 0;
     /* align-items: center; */
     font-size: 4ch;
     color: #fff;
