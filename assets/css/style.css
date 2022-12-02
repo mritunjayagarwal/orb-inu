@@ -175,8 +175,8 @@ section {
     }
 
     .rocket-guy img{
-        width: 80%;
-        height: 60% !important;
+        width: 100%;
+        height: auto !important;
     }
 
     .horizontal{
