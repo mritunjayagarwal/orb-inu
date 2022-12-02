@@ -122,7 +122,44 @@ section {
     height: auto !important;
 }
 
+.moon-para{
+    width: 60%; margin: 0 auto;margin-top: 50px
+}
+
+.howtoimg{
+    width: 50%;
+}
+
 @media only screen and (max-width: 667px) {
+
+    .nav-item{
+        margin: 10px 0 10px -10px;
+    }
+
+    .uni-btn{
+        width: 98%;
+        margin-left: 10px;
+    }
+
+    .howtoimg{
+        width: 100%;
+    }
+
+    .step-grid h2{
+        font-size: 25px;
+    }
+    .step-grid p{
+        font-size: 15px !important;
+        margin-top: 20px;
+    }
+
+    .howbtn{
+        font-size: 16px !important;
+    }
+
+    .moon-para{
+        width: 90%;
+    }
 
     .rocket-guy{
         max-width: 50vw !important;
@@ -149,7 +186,7 @@ section {
 
     .heading{
         font-size: 30px;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .how-btn{
@@ -372,7 +409,8 @@ section {
         background: none;
         color: #fff;
         font-size: 20px;
-        font-weight: 800;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* font-weight: 800; */
     }
 
     .circle{
