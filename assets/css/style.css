@@ -125,7 +125,7 @@ section {
 @media only screen and (max-width: 667px) {
 
     .rocket-guy{
-        max-width: 30vmax !important;
+        max-width: 50vmax !important;
         padding: 0 !important
     }
 
@@ -207,14 +207,14 @@ section {
 }
 
 .mainn {
-    width: 1500% !important;
+    width: 1000% !important;
     display: flex;
     /* flex-wrap: nowrap; */
     position:sticky;
 }
 
 .horizontal {
-    min-width: 20vw;
+    min-width: 25vw;
     /* min-height: 100vh; */
     display: flex;
     /* justify-content: center; */
