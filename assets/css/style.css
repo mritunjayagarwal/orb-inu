@@ -125,13 +125,17 @@ section {
 @media only screen and (max-width: 667px) {
 
     .rocket-guy{
-        max-width: 50vmax !important;
+        max-width: 50vw !important;
         padding: 0 !important
     }
 
     .rocket-guy img{
         width: 100%;
         height: auto !important;
+    }
+
+    .horizontal{
+        min-width: 80vw !important;
     }
 
     .head-para{
