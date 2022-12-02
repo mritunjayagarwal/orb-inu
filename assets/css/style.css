@@ -84,6 +84,10 @@ section {
     letter-spacing: 7px;
 }
 
+.doggo-main{
+    position: absolute; bottom: 0px; right: -150px;width: 50%;
+}
+
 .doggo-temp{
     display: none;
 }
@@ -130,6 +134,8 @@ section {
     width: 50%;
 }
 
+
+
 @media only screen and (max-width: 667px) {
 
     .nav-item{
@@ -163,12 +169,14 @@ section {
 
     .rocket-guy{
         max-width: 50vw !important;
-        padding: 0 !important
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
     }
 
     .rocket-guy img{
-        width: 100%;
-        height: auto !important;
+        width: 80%;
+        height: 60% !important;
     }
 
     .horizontal{
@@ -206,11 +214,17 @@ section {
     }
     
     .doggo-main{
-        display: none;
+        display: block;
+        right: -70px;
+        width: 110%;
+    }
+
+    .question{
+        padding-bottom: 430px;
     }
 
     .doggo-temp{
-        display: block;
+        /* display: block; */
         margin-right: -100px !important;
     }
 
