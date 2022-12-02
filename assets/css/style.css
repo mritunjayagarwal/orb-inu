@@ -211,7 +211,7 @@ section {
 }
 
 .mainn {
-    width: 1000% !important;
+    width: 80% !important;
     display: flex;
     /* flex-wrap: nowrap; */
     position:sticky;
