@@ -120,7 +120,7 @@
                 <div class="col-lg-6 d-flex align-items-center">
                     <div>
                         <h3 class="text-white mb-4" style = "font-weight: 500">INSTANT USAGE REWARD</h3>
-                        <p class="text-white" style = "line-height: 25px; font-weight: 100;">AT MEME MAKER DAO WE AIM TO CREATE AN ECOSYSTEM
+                        <p class="text-white" style = "line-height: 25px; font-weight: 100; font-size: 15px; color: #d3d3d3; opacity: 0.6">AT MEME MAKER DAO WE AIM TO CREATE AN ECOSYSTEM
                             WHERE MEME MAKERS ARE INCENTIVIZED TO DISPLAY
                             THEIR WORK ON OUR MARKETPLACE AND GET RATED FOR
                             THE QUALITY OF THEIR WORK. THE WORK THEY DISPLAY
@@ -128,7 +128,7 @@
                             APPROACH THEM TO GET MEMES MADE FOR THEIR
                             PROJECT. THINK OF IT AS AN UPWORK/FIVER ON
                             BLOCKCHAIN.</p>
-                        <p class="text-white" style = "line-height: 25px; font-weight: 100;">OUR AIM IS TO START WITH MEME MAKERS AND THEN
+                        <p class="text-white" style = "line-height: 25px; font-weight: 100; font-size: 15px; color: #d3d3d3; opacity: 0.6">OUR AIM IS TO START WITH MEME MAKERS AND THEN
                             GROW IT AS A FULL FLEDGE MARKETPLACE FOR ANYTHING
                             RELATED TO BLOCKCHAIN, WHICH INCLUDES SMART
                             CONTRACT DEVELOPMENT, NFTS, HIRING ADMINS/MODS,
@@ -190,7 +190,7 @@
             <p class = "text-white text-center" style = "width: 60%; margin: 0 auto;margin-top: 50px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ea quibusdam possimus ducimus magni quam blanditiis nemo? Libero voluptate id nostrum suscipit blanditiis laborum, quo repellendus corporis a, reiciendis temporibus?</p>
             <div class="sticky-container">
                 <main class = "mainn">
-                    <div class="horizontal d-flex justify-content-end" style ="min-width: 50vw;">
+                    <div class="horizontal d-flex justify-content-cdenter rocket-guy" style = "margin-top: 100px">
                         <img src = "assets/img/icon/4.png" />
                     </div>
                     <div class="horizontal" style = "margin-top: 100px">
@@ -452,13 +452,13 @@
     let sections = gsap.utils.toArray(".horizontal");
 
     gsap.to(sections, {
-    xPercent: -300 * (sections.length - 1),
-    ease: "none",
+    xPercent: -100 * (sections.length - 1),
+    // ease: "none",
     scrollTrigger: {
         trigger: ".mainn",
         pin: true,
         scrub: 1,
-        snap: 1 / (sections.length - 1),
+        // snap: 1 / (sections.length - 1),
         // base vertical scrolling on how wide the container is so it feels more natural.
         end: () => "+=" + document.querySelector(".mainn").offsetWidth
     }
