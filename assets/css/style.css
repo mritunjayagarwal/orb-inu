@@ -158,7 +158,7 @@ section {
 @media only screen and (max-width: 667px) {
 
     #background-video{
-        height: 120vh;
+        height: 120vh !important;
       }
 
     .nav-item {
